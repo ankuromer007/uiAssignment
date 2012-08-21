@@ -1,0 +1,148 @@
+/*div, section, aside{
+	border: thin solid #ccc;
+}*/
+
+.wrapper{
+	width: 990px;
+	/*border: thin solid #ccc;*/
+	margin: 0 auto;
+	padding: 30px 10px;
+	font-family: arial;
+	font-size: 12px;
+}
+
+.social{
+	float: right;
+	padding: 10px;
+}
+
+.btn{
+	color: #000;
+	text-decoration: none;
+	font-family: sans-serif, arial, verdana;
+	font-size: 12px;
+	padding: 10px 12px;
+	display: inline;
+}
+
+.btn:hover, .active{
+	background: #F5EEEA;
+	color: #ED7311;
+	border: thin solid #fff;	
+}
+
+
+
+nav{
+	background: #eaeaea;
+	height: 35px;
+	line-height: 35px;
+	text-transform: uppercase;
+}
+
+aside{
+	float: right;
+}
+
+aside img{
+	margin: 0 0 0 10px;
+}
+
+section{
+	margin: 5px 270px 0 0;
+	padding: 8px;
+	font-size: 15px;
+}
+
+.floatleft{
+	float: left;
+	padding: 8px 8px 8px 0;
+}
+
+.clr{
+	clear: both;
+}
+
+.btn2{
+	background: #ecdada;
+	color: #000;
+	text-decoration: none;
+	font-family: sans-serif, arial, verdana;
+	font-size: 12px;
+	margin: 0 2px 0 0;
+	padding: 5px 10px;
+	display: inline;
+	border-radius: 10px;
+}
+
+.btn2:hover, .active1{
+	background: #E25800;
+	color: #fff;
+}
+
+ul, ul li{
+	padding: 0;
+	margin: 0;
+}
+
+nav ul li{
+	float: left;
+	padding: 0 0;
+	list-style: none;
+}
+
+nav ul li a{
+	display: block;
+}
+nav ul .submenu{
+	display: none;
+}
+
+nav ul li:hover ul{
+	display: block;
+	position: absolute;
+	background: #ED7311;
+	box-shadow: 0px 2px 5px #333;
+	z-index: 5;
+}
+
+nav ul li ul li{
+	float: none;	
+}
+
+h1{
+	font-family: 'Knewave', cursive;
+}
+
+.banner{
+	margin: 0 270px 0 0;
+	position: relative;
+}
+
+.slider{
+	position: relative;
+}
+.slider img{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.bannerText{
+	position: absolute;
+	background: #333;
+	opacity: 0.75;
+	top: 237px;
+	width: 595px;
+	padding: 10px;
+	color: #fff;
+}
+
+#feedback{
+	background: #066;
+	position: fixed;
+	top: 45px;
+	color: #fff;
+	width: 125px;
+	padding: 5px;
+}

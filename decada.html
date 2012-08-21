@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<script type="text/javascript" src="jquery/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href='http://fonts.googleapis.com/css?family=Knewave' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<div class="social">
+				<a href="http://twitter.com"><img src="images/twitter.png"></a>
+				<a href="http://facebook.com"><img src="images/facebook.png"></a>
+				<a href="https://plus.google.com"><img src="images/gplus.png"></a>
+				<a href="http://www.linked.com"><img src="images/linkedin.png"></a>
+				<a href="http://wordpress.com"><img src="images/rss.png"></a>
+				<a href="http://mail.neevtech.com"><img src="images/email.png"></a>
+			</div>
+			<img src="images/logo.png">
+		</header>
+
+		<br>
+
+		<nav>
+			<div id="tabs">
+			<ul>
+				<li><a class="btn" href="#tabs-1">Home</a></li>
+				<li><a class="btn" href="#tabs-2">About</a></li>
+				<li><a class="btn" href="#tabs-3">Services</a></li>
+				<li><a class="btn" href="#tabs-4">Templates</a>
+					<ul class="submenu">
+						<li><a href="">Archives</a></li>
+						<li><a href="">Contact Form</a></li>
+						<li><a href="">Full Width</a></li>
+						<li><a href="">Sitmap</a></li>
+					</ul>
+				</li>
+				<li><a class="btn" href="#tabs-5">Parent Page</a>
+					<ul class="submenu">
+						<li><a href="">Child Page 1</a></li>
+						<li><a href="">Child Page 2</a></li>
+						<li><a href="">Child Page 3</a></li>
+					</ul>
+				</li>
+			</ul>
+			</div>
+		</nav>
+
+		<div class="clr"></div>
+
+		<aside>
+			<img src="images/nwpt3.gif">
+			<br>			
+			<br>
+			<div id="tabs1">
+				<a class="btn2" href="">Recent Posts</a>
+				<a class="btn2" href="">Comments</a>
+				<a class="btn2" href="">Tags</a>
+			</div>
+
+			<h2>Latest News anout Deceda</h2>
+		</aside>
+
+		<div class="banner">
+			<div class="slider">
+				<img src="images/a.jpg">
+				<img src="images/b.jpg">
+				<img src="images/c.jpg">
+				<img src="images/d.jpg">
+			</div>
+			<div class="bannerText">
+					This is default featured slide 1
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					con laborum.
+			</div>
+		</div>
+
+		<div class="clr"></div>
+
+		<!-- <div id="feedback">
+			My feedback
+		</div> -->
+
+		<section>
+			<h1 > Welcome to Decada </h1>
+			<img class="floatleft" src="images/1-300x225.jpg">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+			<div class="clr"></div>
+		</section>
+	</div>
+</body>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+			
+		$("#tabs ul li:first").addClass("active");
+
+		$("#tabs ul li a").click(function(){
+
+			$("#tabs ul li").removeClass("active");
+			$(this).parent().addClass("active");
+		})
+
+		$("#tabs1 a:first").addClass("active1");
+
+		$("#tabs1 a").click(function(){
+
+			$("#tabs1 a").removeClass("active1");
+			$(this).parent().addClass("active1");
+		})
+
+		$(".slider img:gt(0)").hide();
+
+		setInterval(function(){
+			$(".slider img:first").fadeOut().next("img").fadeIn().end().appendTo(".slider");
+		},3000)
+	})
+</script>
+</html>
